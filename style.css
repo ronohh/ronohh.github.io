@@ -1,0 +1,72 @@
+body{
+    margin:  0;
+    padding: 0;
+    
+}
+nav{
+    /* move around */
+    display: flex;
+    /* moves to the right end */
+    justify-content: flex-end;
+    background-color: black;
+    padding: 8px;
+    
+}
+nav ul{
+    /* this is an ordered list */
+    /* displays it now horizontally */
+    display: flex;
+    
+    /* background-color: aqua; */
+    padding: 9px;
+}
+nav ul li{
+    /* remove dots */
+    list-style-type: none;
+    /* space them */
+    padding-right:8px ;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: auto;
+    color: white;
+}
+nav ul li a:hover{
+    background-color: aqua;
+    color:black;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding:2px;
+}
+
+/* chini ya navigation */
+.background{
+    background-image: url(https://cdn.pixabay.com/photo/2015/07/19/10/00/school-work-851328_1280.jpg);
+    /* to occupy the whole div */
+    background-size: cover;
+    height: 87vh;
+    /* position the image in a zoomed way / a balance zoom / well croped image */
+    background-position: center;
+    /* text can move text freely .... check on flex too */
+    position:relative;
+}
+.text{
+    color:aliceblue;
+    /* combined the nav bar with the image? when used absolute */
+    position: absolute;
+    padding: 50px 0 0 500px ;
+
+}
+.text button{
+    border: 1px solid rgb(88, 219, 246);
+    cursor: pointer;
+    background-color: black;
+    padding: 8px;
+    color : white;
+}
+.text button:hover{
+    cursor: pointer;
+    background-color: rgb(61, 65, 65);
+    color:aqua;
+    transition:0.2s;
+}
